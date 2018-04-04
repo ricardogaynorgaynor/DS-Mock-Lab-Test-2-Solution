@@ -7,6 +7,8 @@ public class Driver {
 		Stack stack = new Stack();
 		Queue queue = new Queue();
 		printPostFix("5/2+", queue, stack);
+		printPostFix("4/2+5", queue, stack);
+		printPostFix("4+3–8/2+5", queue, stack);
 
 	} 
 	
@@ -89,6 +91,7 @@ public class Driver {
 				System.out.println("Invalid Expression");
 				return false;
 			}
+			
 			
 			// validation continues //
 			i++;	
